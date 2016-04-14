@@ -14,7 +14,7 @@
     <!--***************************************-->
     <script type ="text/javascript">
         function main(){
-            var total = 0;
+            var total = 50;
             var quantity = document.getElementById("quantity").value;
             var ppunit = document.getElementById("ppunit").value;
             var tax = document.getElementById("tax").value;
@@ -24,10 +24,10 @@
 //            document.write(ppunit);
 //            document.write(tax);
 //            document.write(discount);
-
-            var toma = 7;
-            document.getElementById("total").value = toma;
-//          document.write(toma);
+ toma = document.getElementsById("toma").value;
+//            var toma = 7;
+//            document.getElementById("total").value = toma;
+////          document.write(toma);
         }
     </script>
     <!--***************************************-->
@@ -35,7 +35,7 @@
     <!--***************************************-->
 <body>
 
-<form method="get" onsubmit="return main()">
+<form onclick="main()">
     <table>
         <tr>
             <td>
@@ -68,7 +68,7 @@
         <tr>
             <td>
                 <span class="attr">Total</span><br >
-                <input type="text" id="total">
+                <input type="text" id="total" value="">
             </td>
         </tr>
 
