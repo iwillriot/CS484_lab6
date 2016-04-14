@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Lab6</title>
+<head>
+    <!--***************************************-->
+    <!--***************STYLE*******************-->
+    <!--***************************************-->
+    <style>
+
+    </style>
+    <!--***************************************-->
+    <!--***************SCRIPT******************-->
+    <!--***************************************-->
+    <script type ="text/javascript">
+        function main(){
+            var total = 0;
+            var quantity = document.getElementById("quantity").value;
+            var ppunit = document.getElementById("ppunit").value;
+            var tax = document.getElementById("tax").value;
+            var discount = document.getElementById("discount").value;
+//            document.write(total);
+//            document.write(quantity);
+//            document.write(ppunit);
+//            document.write(tax);
+//            document.write(discount);
+
+            var toma = 7;
+            document.getElementById("total").value = toma;
+//          document.write(toma);
+        }
+    </script>
+    <!--***************************************-->
+    <!--***************BODY********************-->
+    <!--***************************************-->
+<body>
+
+<form method="get" onsubmit="return main()">
+    <table>
+        <tr>
+            <td>
+                <span class="attr">Quantity</span><br >
+                <input type="number" id="quantity" min=0 oninput="validity.valid||(value='');">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="attr">Price Per Unit</span><br >
+                <input type="text" id="ppunit">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="attr">Tax Rate (%)</span><br >
+                <input type="text" id="tax">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="attr">Discount Rate (%)</span><br >
+                <input type="text" id="discount">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span class="attr">Total</span><br >
+                <input type="text" id="total">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" name="Submit" value="Calculate">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
