@@ -1,0 +1,11 @@
+body{
+	background-color:black;
+}
+div.l1{
+	background-color:lightgray;
+	width:180px;
+	
+}
+fieldset{
+	border=2px;
+}

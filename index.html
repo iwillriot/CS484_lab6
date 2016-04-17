@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Lab6</title>
-<head>
-
-
-</head>
-<script type="text/javascript" src="jahva.js"></script>
-<body>
-<!-- <form action="run()" method="get"> -->
-<form onsubmit="return run();">
-    <table>
-        <tr>
-            <td>
-                <span class="attr">Quantity</span><br >
-                <input type="number" id="quantity" min=0 oninput="validity.valid||(value='');">
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="attr">Price Per Unit</span><br >
-                <input type="text" id="ppunit">
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="attr">Tax Rate (%)</span><br >
-                <input type="text" id="tax">
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="attr">Discount Rate (%)</span><br >
-                <input type="text" id="discount">
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <span class="attr">Total</span><br >
-                <input type="text" id="total">
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-				<input type="submit" value="Calculate">
-			
-			<!--
-               <input type="submit" onclick="run()" name="submit" value="Calculate">
-				-->
-			</td>
-        </tr>
-    </table>
-</form>
-</body>
+   <meta charset="UTF-8">
+   <title>Lab6</title>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <script type="text/javascript" src="jahva.js"></script>
+   <body>
+      <!-- <form action="run()" method="get"> -->
+      <div class="l1">
+         <form onsubmit="return run();">
+            <fieldset>
+               <table>
+                  <tr>
+                     <td>
+                        <span class="attr">Quantity</span><br >
+                        <input type="number" id="quantity" min=0 oninput="validity.valid||(value='');">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span class="attr">Price Per Unit</span><br >
+                        <input type="text" id="ppunit">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span class="attr">Tax Rate (%)</span><br >
+                        <input type="text" id="tax">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span class="attr">Discount Rate (%)</span><br >
+                        <input type="text" id="discount">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span class="attr">Total</span><br >
+                        <input type="text" id="total">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input type="submit" value="Calculate">
+                        <!--
+                           <input type="submit" onclick="run()" name="submit" value="Calculate">
+                           -->
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+         </form>
+      </div>
+   </body>
 </html>
