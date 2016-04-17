@@ -3,39 +3,13 @@
 <meta charset="UTF-8">
 <title>Lab6</title>
 <head>
-    <!--***************************************-->
-    <!--***************STYLE*******************-->
-    <!--***************************************-->
-    <style>
 
-    </style>
-    <!--***************************************-->
-    <!--***************SCRIPT******************-->
-    <!--***************************************-->
-    <script type ="text/javascript">
-        function main(){
-            var total = 50;
-            var quantity = document.getElementById("quantity").value;
-            var ppunit = document.getElementById("ppunit").value;
-            var tax = document.getElementById("tax").value;
-            var discount = document.getElementById("discount").value;
-//            document.write(total);
-//            document.write(quantity);
-//            document.write(ppunit);
-//            document.write(tax);
-//            document.write(discount);
- toma = document.getElementsById("toma").value;
-//            var toma = 7;
-//            document.getElementById("total").value = toma;
-////          document.write(toma);
-        }
-    </script>
-    <!--***************************************-->
-    <!--***************BODY********************-->
-    <!--***************************************-->
+
+</head>
+<script type="text/javascript" src="jahva.js"></script>
 <body>
-
-<form onclick="main()">
+<!-- <form action="demo_form.asp" method="get"> -->
+<form  method="post" >
     <table>
         <tr>
             <td>
@@ -74,7 +48,7 @@
 
         <tr>
             <td>
-                <input type="submit" name="Submit" value="Calculate">
+               <input type="submit" onclick="run()" name="submit" value="Calculate">
             </td>
         </tr>
     </table>
