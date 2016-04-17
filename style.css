@@ -1,11 +1,16 @@
-body{
+body {
 	background-color:black;
 }
-div.l1{
+div.l1 {
 	background-color:lightgray;
 	width:180px;
-	
 }
-fieldset{
+fieldset {
 	border=2px;
+}
+span.attr {
+	font-weight:bold;
+}
+input.buttn {
+	background-color:white;
 }

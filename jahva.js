@@ -1,5 +1,5 @@
 function run(){
-	//get variables form index.html
+	//get variables from the form in index.html
 	var quantity = document.getElementById("quantity").value;
 	var ppunit = document.getElementById("ppunit").value;
 	var tax = document.getElementById("tax").value;
@@ -21,6 +21,6 @@ function run(){
 	
 	//fix the final total to 2 decimal places
 	finalTotal = finalTotal.toFixed(2);
-
+	
 	document.getElementById('total').value = finalTotal;
 }
