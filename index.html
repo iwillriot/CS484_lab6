@@ -8,8 +8,8 @@
 </head>
 <script type="text/javascript" src="jahva.js"></script>
 <body>
-<!-- <form action="demo_form.asp" method="get"> -->
-<form  method="post" >
+<!-- <form action="run()" method="get"> -->
+<form onsubmit="return run();">
     <table>
         <tr>
             <td>
@@ -42,14 +42,18 @@
         <tr>
             <td>
                 <span class="attr">Total</span><br >
-                <input type="text" id="total" value="">
+                <input type="text" id="total">
             </td>
         </tr>
 
         <tr>
             <td>
+				<input type="submit" value="Calculate">
+			
+			<!--
                <input type="submit" onclick="run()" name="submit" value="Calculate">
-            </td>
+				-->
+			</td>
         </tr>
     </table>
 </form>
