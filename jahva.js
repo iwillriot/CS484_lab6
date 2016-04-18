@@ -1,4 +1,5 @@
 function run(){
+	'use strict';
 	//get variables from the form in index.html
 	var quantity = document.getElementById("quantity").value;
 	var ppunit = document.getElementById("ppunit").value;
@@ -23,4 +24,22 @@ function run(){
 	finalTotal = finalTotal.toFixed(2);
 	
 	document.getElementById('total').value = finalTotal;
+}
+function toma() {
+	'use strict';
+	var str = document.getElementById("comment").value;
+	str = str.split("");
+	var max = document.getElementById("count").value;
+	
+	//parse it to int
+	max = parseInt(max);
+	
+	//var max = str.length;
+	var s = "";
+	
+	var i;
+	for(i=0;i<max;i++){
+		s = s + str[i];
+	}
+	document.getElementById("out").value = s;
 }
