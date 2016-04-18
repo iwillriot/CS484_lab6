@@ -25,6 +25,7 @@ function run(){
 	
 	document.getElementById('total').value = finalTotal;
 }
+
 function toma() {
 	'use strict';
 	var str = document.getElementById("comment").value;
@@ -34,12 +35,16 @@ function toma() {
 	//parse it to int
 	max = parseInt(max);
 	
-	//var max = str.length;
+	//build string to display
 	var s = "";
 	
+	//create variable for loop
 	var i;
+	
+	//loop and concatenate the string until the max given
 	for(i=0;i<max;i++){
 		s = s + str[i];
 	}
+	
 	document.getElementById("out").value = s;
 }
