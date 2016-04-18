@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
    <meta charset="UTF-8">
-   <title>Lab6v2</title>
+   <title>Lab6</title>
    <head>
-      
+      <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <script type="text/javascript" src="jahva.js"></script>
    <body>
-		
-		
-		<br >
-		<span class="attr">Comments</span>
-		<br >
-		
-		 <textarea maxlength="50" id="comment" type="text"></textarea>
-		
-		 <br >
-		 <span class="attr">Character Count </span>
-		 <br >
-		 <input type="number" id="count" min=0 max=50 oninput="validity.valid||(value='');">
-			<br >
-			<span class="attr">Result</span>
-			<br >
-			<textarea id="out" maxlength="50" value=""></textarea>
-			<br >
-			<button onclick="toma()" method="post">Submit</button>
-			
-			<br >
-			<br >
-			<p id="pp"></p>
+      <div class="l1">
+         <fieldset>
+            <fieldset class="f2">
+               <h3>Enter your comments below (50 characters max).</h3>
+               <span class="attr">Comments</span>
+               <br >
+               <textarea maxlength="50" id="comment" type="text"></textarea>
+               <br >
+               <span class="attr">Character Count </span>
+               <br >
+               <input type="number" id="count" min=0 max=50 oninput="validity.valid||(value='');">
+               <br >
+               <span class="attr">Result</span>
+               <br >
+               <textarea id="out" maxlength="50" value=""></textarea>
+               <br >
+               <button onclick="toma()" method="post">Submit</button>
+            </fieldset>
+         </fieldset>
+      </div>
    </body>
 </html>
+
