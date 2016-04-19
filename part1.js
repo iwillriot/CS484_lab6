@@ -1,3 +1,8 @@
+//****************
+//William J. Diaz
+//Lab 6 - Part 1
+//****************
+
 function init() {
 	'use strict';
 	document.getElementById('theForm').onsubmit = run;
