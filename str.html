@@ -8,29 +8,31 @@
    <script type="text/javascript" src="jahva.js"></script>
    <body>
       <div class="l1">
-         <fieldset>
-            <fieldset class="f2">
-               <h3>Enter your comments below (50 characters max).</h3>
-               <span class="attr">Comments</span>
-               <br >
-               <textarea maxlength="50" id="comment" type="text"></textarea>
-               <br >
-               <span class="attr">Character Count </span>
-               <br >
-               <input type="number" id="count" min=0 max=50 oninput="validity.valid||(value='');">
-               <br >
-               <span class="attr">Result</span>
-               <br >
-               <textarea id="out" maxlength="50" value=""></textarea>
-               <br >
-               <button onclick="toma()" method="post">Submit</button>
+         <form action="" method="post" id="theForm">
+            <fieldset>
+               <fieldset class="f2">
+                  <h3>Enter your comments below (50 characters max).</h3>
+                  <span class="attr">Comments</span>
+                  <br >
+                  <textarea maxlength="50" id="comment" type="text"></textarea>
+                  <br >
+                  <span class="attr">Character Count </span>
+                  <br >
+                  <input type="number" id="count" min=0 max=50 oninput="validity.valid||(value='');">
+                  <br >
+                  <span class="attr">Result</span>
+                  <br >
+                  <textarea id="out" maxlength="50" value=""></textarea>
+                  <br >
+                  <input type="submit" value="Calculate" id="submit">
+               </fieldset>
             </fieldset>
-         </fieldset>
+         </form>
       </div>
-	  <br >
-	  <br >
-	  <br >
-	  <a href="index.html">Click here for part 1</a>
+      <br >
+      <br >
+      <br >
+      <a href="index.html">Click here for part 1</a>
    </body>
 </html>
 

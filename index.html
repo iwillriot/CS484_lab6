@@ -5,51 +5,53 @@
    <head>
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
-   <script type="text/javascript" src="jahva.js"></script>
+   <script type="text/javascript" src="jahva2.js"></script>
    <body>
       <div class="l1">
-         <fieldset>
-            <fieldset class="f2">
-               <h3>Use this form to calculate the order total.</h3>
-               <table>
-                  <tr>
-                     <td>
-                        <span class="attr">Quantity</span><br >
-                        <input type="number" id="quantity" min=0 oninput="validity.valid||(value='');">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <span class="attr">Price Per Unit</span><br >
-                        <input type="text" id="ppunit">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <span class="attr">Tax Rate(%)</span><br >
-                        <input type="text" id="tax">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <span class="attr">Discount(%)</span><br >
-                        <input type="text" id="discount">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <span class="attr">Total</span><br >
-                        <input type="text" id="total" value="">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <input onclick="run()" class="buttn" type="submit" value="Calculate">
-                     </td>
-                  </tr>
-               </table>
+         <form action="" method="post" id="theForm">
+            <fieldset>
+               <fieldset class="f2">
+                  <h3>Use this form to calculate the order total.</h3>
+                  <table>
+                     <tr>
+                        <td>
+                           <span class="attr">Quantity</span><br >
+                           <input type="number" id="quantity" min=0 oninput="validity.valid||(value='');">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <span class="attr">Price Per Unit</span><br >
+                           <input type="text" id="ppunit">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <span class="attr">Tax Rate(%)</span><br >
+                           <input type="text" id="tax">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <span class="attr">Discount(%)</span><br >
+                           <input type="text" id="discount">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <span class="attr">Total</span><br >
+                           <input type="text" id="total" value="">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <input type="submit" value="Calculate" id="submit">
+                        </td>
+                     </tr>
+                  </table>
+               </fieldset>
             </fieldset>
-         </fieldset>
+         </form>
       </div>
       <br >
       <br >
