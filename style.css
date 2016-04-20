@@ -3,13 +3,11 @@ William J. Diaz
 Lab 6 - Part 1 and 2
 ********************/
 
-body {
-	background-color:white;
-}
 div.l1 {
 	background-color:lightgray;
 	width:20%;
 	padding:12px;
+	box-shadow: 10px 10px 5px grey;
 }
 fieldset {
 	border=2px;
@@ -27,5 +25,4 @@ input.buttn {
 
 h3 {
 	font-weight:bold;
-	border-bottom-color:yellow;
 }
