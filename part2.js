@@ -11,34 +11,18 @@ window.onload = init;
 
 function handleString() {
 	'use strict';
-	
 	//take in text as a string using the id of comment
 	var str = document.getElementById("comment").value;
 	
-	//split the string by character
-	str = str.split("");
+	//get the last index of the string before 50 characters
+	var last = str.lastIndexOf(" ");
 	
-	//set the max allowed characters from the value obtained from id of count
-	var max = document.getElementById("count").value;
+	//slice the string from the start to the last index 
+	var out = str.slice(0,last);
 	
-	//parse it to int
-	max = parseInt(max);
-	
-	//build string to display
-	var s = "";
-	
-	//create variable for loop
-	var i;
-	
-	//loop and concatenate the string until the max given
-	for(i=0;i<max;i++){
-		
-		//build the string to output. one character at at time.
-		s = s + str[i];
-	
-	}
 	//set the string to the value of the input tag with id out.
-	document.getElementById("out").value = s;
+	document.getElementById("count").value = last;
+	document.getElementById("out").value = out;
 	
 	return false;
 }
